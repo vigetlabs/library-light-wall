@@ -1,12 +1,5 @@
-require 'bundler/inline'
-
-gemfile do
-  source 'https://rubygems.org'
-
-  gem 'awesome_print'
-  gem 'serialport'
-  gem 'pry'
-end
+require 'rubygems'
+require 'bundler/setup'
 
 load "pixel_stream.rb"
 load "my_color.rb"

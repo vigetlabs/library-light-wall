@@ -1,7 +1,13 @@
+require 'serialport'
+
 class SerialOutputter
   class << self
-    # PORT_STR  = '/dev/ttyACM0'
-    PORT_STR  = '/dev/tty.usbmodem1411'
+    # For development on Macbook
+    # PORT_STR  = '/dev/tty.usbmodem1411'
+
+    # For usage on RaspberryPi
+    PORT_STR  = '/dev/ttyACM0'
+
     BAUD_RATE = 115200
     DATA_BITS = 8
     STOP_BITS = 1
